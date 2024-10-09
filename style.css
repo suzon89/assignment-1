@@ -1,0 +1,861 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    padding: 16px 32px;
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navMenu {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.button-wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn {
+    display: flex;
+    gap: 15px;
+}
+
+.login {
+    border: none;
+    border-radius: 30px;
+    padding: 11px 28px;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.get-started {
+    border: none;
+    border-radius: 30px;
+    padding: 11px 28px;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+.button-wrap img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ECECEC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.menu-icon i {
+    font-size: 20px;
+}
+
+.bg-img {
+    padding: 200px 166px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 44px 120px 67px 98px;
+    border-radius: 10px;
+}
+
+.hero-container h1 {
+    text-align: center;
+}
+
+.select-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 55px;
+}
+.custom-select {
+    display: flex;
+    position: relative;
+  }
+  
+.custom-select select {
+    appearance: none;
+    width: 222px;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 11px 9px 11px 20px;
+    background-color: #ECECEC;
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+  }
+
+.custom-select select:focus {
+    outline: none;
+    border: none;
+}
+
+.custom-select::after {
+  --size: 0.3rem;
+  position: absolute;
+  content: "";
+  right: 1rem;
+  pointer-events: none;
+}
+
+.custom-select::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 50%;
+}
+
+.how-much-btn-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.how-much {
+    width: 702px;
+    background-color: #ECECEC;
+    color: #000;
+    padding: 11px 0;
+    font-size: 22px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.how-much-btn-wrap button {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 11px 59px;
+    background-color: #00EBC7;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    margin-top: 24px;
+    cursor: pointer;
+    display: flex;
+    margin: 0 auto;
+}
+.buy-sell-wrap {
+    background-color: #FDE24F;
+    padding: 80px 146px;
+    border-bottom: 1px solid #000;
+}
+
+.buy-sell-wrap h2 {
+    font-size: 34px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.buy-sell-wrap h2 i {
+    font-weight: 400;
+}
+
+.buy-sell-wrap img {
+    margin-top: 48px;
+}
+
+.features h2 {
+    padding-top: 80px;
+    padding-left: 65px;
+}
+
+.feature-flex {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 140px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.single-feature {
+   text-align: center;
+}
+
+.feature-flex .line-1 {
+    width:120px;
+    height:1px;
+    background-color: #000000;
+    position: absolute;
+    top: 115px;
+    left: 320px;
+}
+
+.feature-flex .line-2 {
+    width:120px;
+    height:1px;
+    background-color: #000000;
+    position: absolute;
+    top: 115px;
+    right: 320px;
+}
+
+.single-feature h3 {
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 15px;
+    color: #000000;
+}
+
+.single-feature p {
+    font-size: 20px;
+    color: #535353;
+    padding-top: 20px;
+}
+
+.single-feature a {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 45px;
+    display: inline-block;
+    color: #161616;
+}
+
+.feature-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature-btn button {
+    width: 228px;
+    padding: 11px 28px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    margin-top: 99px;
+    margin-bottom: 52px;
+    cursor: pointer;
+}
+/* buy & sell section */
+.buy h3 {
+    font-size: 34px;
+    font-weight: 500;
+    padding-top: 75px;
+    padding-left: 65px;
+    text-transform: capitalize;
+}
+.sell h3 {
+    font-size: 34px;
+    font-weight: 500;
+    padding-top: 75px;
+    padding-left: 65px;
+    text-transform: capitalize;
+}
+.buy-sell-section {
+    display: flex;
+}
+
+.buy {
+    width:100%;
+    border-right: 1px solid #000000;
+}
+.sell {
+    width: 100%;
+}
+.offer-wrap {
+    padding: 50px 65px 0 65px;
+}
+
+.offer {
+    display: flex;
+    border: 1px solid #000000;
+    padding: 13px 55px 13px 20px;
+    border-radius: 15px;
+    display: flex;
+    gap: 25px;
+    margin-top: 32px;
+}
+.offer:nth-child(1) {
+    margin-top: 0;
+}
+.offer-content {
+    display: flex;
+    gap: 56px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.first-second-text {
+    display: flex;
+    gap: 32px;
+}
+
+.view-btn {
+    padding: 11px 28px;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    margin: 0 auto;
+    border: none;
+    border-radius: 15px;
+    background-color: #000000;
+    color: #fff;
+    margin-top: 42px;
+    margin-bottom: 75px;
+}
+/* crypto */
+.crypto {
+    background-color: #CFBAFF;
+    padding: 161px 70px 127px 70px;
+}
+
+.crypto h2 {
+    font-size: 75px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+}
+
+.get-started-btn {
+    font-size: 32px;
+    font-weight: 500;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 45px;
+    cursor: pointer;
+    margin-top: 127px !important;
+    display: flex;
+    margin: 0 auto;
+}
+footer {
+    background-color: #000000;
+}
+.footer-wrap {
+    padding: 110px 393px 56px 135px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 100px;
+}
+
+.product h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.product ul {
+    margin-top: 32px;
+}
+
+.product ul li  {
+    padding-top: 13px;
+}
+.product ul li:nth-child(1) {
+    padding-top: 0;
+}
+
+.product ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    padding: 40px 48px;
+    border-top: 1px solid #fff;
+}
+
+.copyright p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+/* Media quria */
+@media screen and (max-width: 475px) { 
+   .logo img {
+        width: 150px;
+   }
+  .menu-icon {
+    display: flex !important;
+  }
+  .bg-img {
+        padding: 24px 18px;
+    }
+    .hero-container {
+        padding: 30px 30px 42px 31px;
+    }
+    .how-much-btn-wrap button {
+        width: 100%;
+    }
+    .custom-select {
+        width: 100%;
+    }
+    .custom-select select {
+        width: 100%;
+    }
+
+    .buy-sell-wrap {
+        padding: 35px 25px;
+    }
+    .buy-sell-wrap h2 {
+        font-size: 15px;
+    }
+    .buy-sell-wrap img {
+        width: 180px;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .feature-flex {
+        flex-wrap: wrap;
+    }
+    .feature-btn button {
+        margin-top: 35px;
+    }
+
+    .buy-sell-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .buy {
+        width:100%;
+        border-right: none
+    }
+    .offer-wrap {
+        padding: 38px 25px 0 25px;
+    }
+    .offer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 13px;
+    }
+    .offer img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .offer-content {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        font-size: 18px;
+    }
+    .first-second-text {
+        gap: 10px;
+    }
+    .buy h3 {
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    .sell h3 {
+        padding-top: 0;
+        padding-left: 25px;
+    }
+    .view-btn {
+        margin-bottom: 45px;
+    }
+    .crypto {
+        padding: 69px 28px 38px 39px;
+    }
+    .crypto h2 {
+        font-size: 35px;
+    }
+    .get-started-btn {
+        margin-top: 55px !important;
+    }
+}
+@media screen and (max-width: 640px) {
+    .button-wrap .btn {
+        display: none;
+    }
+
+    .button-wrap img {
+        display: none;
+    }
+    .menu-icon {
+        display: flex !important;
+      }
+      .bg-img {
+        padding: 24px 18px;
+    }
+    .hero-container {
+        padding: 30px 30px 42px 31px;
+    }
+    .custom-select {
+        width: 100%;
+    }
+    .custom-select select {
+        width: 100%;
+    }
+    .how-much-btn-wrap button {
+        display: flex;
+        margin: 0 auto;
+    }
+    .buy-sell-wrap {
+        padding: 35px 25px;
+    }
+    .buy-sell-wrap h2 {
+        font-size: 20px;
+    }
+    .buy-sell-wrap img {
+        width: 220px;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .feature-flex {
+        flex-wrap: wrap;
+    }
+    .feature-btn button {
+        margin-top: 35px;
+    }
+
+    .buy-sell-section {
+        width: 100%;
+
+    }
+    .buy {
+        width:100%;
+        border-right: none
+    }
+    .offer-wrap {
+        padding: 38px 25px 0 25px;
+    }
+    .offer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 13px;
+    }
+    .offer img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .offer-content {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        font-size: 18px;
+    }
+    .first-second-text {
+        gap: 10px;
+    }
+    .buy h3 {
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    .sell h3 {
+        padding-top: 0;
+        padding-left: 25px;
+    }
+    .view-btn {
+        margin-bottom: 45px;
+    }
+    .crypto {
+        padding: 69px 28px 38px 39px;
+    }
+    .crypto h2 {
+        font-size: 35px;
+    }
+    .get-started-btn {
+        margin-top: 55px !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .button-wrap .btn {
+        display: none;
+    }
+
+    .button-wrap img {
+        display: none;
+    }
+    .bg-img {
+        padding: 24px 18px;
+    }
+    .hero-container {
+        padding: 30px 30px 42px 31px;
+    }
+    .buy-sell-wrap {
+        padding: 55px 35px;
+    }
+    .buy-sell-wrap h2 {
+        font-size: 28px;
+    }
+    .buy-sell-wrap img {
+        width: 300px;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .feature-flex {
+        flex-wrap: wrap;
+    }
+    .feature-flex .line-1 {
+        display: none;
+    }
+
+    .feature-flex .line-2 {
+        display: none;
+    }
+
+    .buy-sell-section {
+        display: flex;
+    }
+    .buy {
+        width:100%;
+        border-right: none
+    }
+    .offer-wrap {
+        padding: 38px 25px 0 25px;
+    }
+    .offer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 13px;
+    }
+    .offer img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .offer-content {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        font-size: 18px;
+    }
+    .first-second-text {
+        gap: 10px;
+    }
+    .buy h3 {
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    .sell h3 {
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    .view-btn {
+        margin-bottom: 45px;
+    }
+    .crypto {
+        padding: 69px 28px 38px 39px;
+    }
+    .crypto h2 {
+        font-size: 40px;
+    }
+    .get-started-btn {
+        margin-top: 55px !important;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .navMenu {
+        display: none;
+      }
+
+      .menu-icon {
+        display: none;
+      }
+      .bg-img {
+        padding: 24px 18px;
+    }
+    .custom-select {
+        width: 100%;
+    }
+    .custom-select select {
+        width: 100%;
+    }
+    .how-much-btn-wrap button {
+        display: flex;
+        margin: 0 auto;
+    }
+    .feature-flex {
+        gap: 40px;
+    }
+
+    .feature-flex .line-1 {
+        display: none;
+    }
+
+    .feature-flex .line-2 {
+        display: none;
+    }
+
+    .feature-flex {
+        gap: 35px;
+        padding: 20px;
+    }
+    .single-feature h3 {
+        font-size: 18px;
+    }
+    .single-feature p {
+        font-size: 16px;
+    }
+
+    .buy-sell-wrap {
+        padding: 65px 146px;
+    }
+    .buy-sell-wrap h2 {
+        font-size: 28px;
+    }
+    .buy-sell-wrap img {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .buy-sell-section {
+        display: flex;
+    }
+    .buy {
+        width:100%;
+        border-right: 1px solid #000000
+    }
+    .offer-wrap {
+        padding: 38px 25px 0 25px;
+    }
+    .offer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 13px;
+    }
+    .offer img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .offer-content {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        font-size: 18px;
+    }
+    .first-second-text {
+        gap: 10px;
+    }
+    .buy h3 {
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    .sell {
+        width: 100%;
+    }
+    .sell h3 {
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    .view-btn {
+        margin-bottom: 45px;
+    }
+
+    .crypto {
+        padding: 69px 28px 38px 39px;
+    }
+    .crypto h2 {
+        font-size: 40px;
+    }
+    .get-started-btn {
+        margin-top: 55px !important;
+    }
+    .footer-wrap {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width: 1280px ) {
+    .menu-icon {
+        display: none;
+      }
+      .feature-flex {
+        gap: 60px;
+    }
+
+    .feature-flex .line-1 {
+        width: 60px;
+        left: 330px;
+    }
+
+    .feature-flex .line-2 {
+        width: 60px;
+        right: 350px;
+    }
+
+    .buy-sell-wrap {
+        padding: 65px 150px;
+    }
+    .buy-sell-wrap h2 {
+        font-size: 28px;
+    }
+    .buy-sell-wrap img {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .crypto {
+        padding: 69px 28px 50px 39px;
+    }
+    .crypto h2 {
+        font-size: 32px;
+    }
+    .get-started-btn {
+        margin-top: 55px !important;
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    .menu-icon {
+        display: none;
+      }
+      .how-much-btn-wrap button {
+        margin-top: 24px;
+    }
+}
